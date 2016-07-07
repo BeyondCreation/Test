@@ -1,13 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author rbn23
- */
 
 import java.awt.Desktop;
 import java.io.IOException;
@@ -25,7 +15,7 @@ public class Browser {
             try {
                 desktop.browse(new URI(url));
             } catch (IOException | URISyntaxException e) {
-                // TODO Auto-generated catch block
+                
                 e.printStackTrace();
             }
         }else{
@@ -33,7 +23,7 @@ public class Browser {
             try {
                 runtime.exec("xdg-open " + url);
             } catch (IOException e) {
-                // TODO Auto-generated catch block
+                
                 e.printStackTrace();
             }
         }
